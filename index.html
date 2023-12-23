@@ -3,77 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinicius Caamaño</title>
+    <title>Caamaño</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Sevillana&display=swap" rel="stylesheet">
+<meta name="google-site-verification" content="ONa2Vd1_YfBHQR3bLIb4EQFnulUbNo6Lp_3n5M8RdjI" />
+<meta name="description" content="imoveis para venda e aluguel no rio de janeiro">
+<meta name="keywords" content="imoveis caamano,imoveis para venda, imoveis para aluguel, apartamentos para venda, apartamentos para aluguel, caamano, imoveis, apartamento">
+<meta name="robots" content="index,follow">
 
 </head>
 
 <header>
     <div id="logo">
-        <h1>Vinicius Caamaño</h1>
-
-    </div>
+      <h1>Imóveis Caamaño</h1></div>
     <div id="menu">
         <ul>
-            <li><a href="#logo">Inicio</a></li>
-            <li><a href="#live">Live</a></li>
-            <li><a href="#social">Rede social</a></li>
-       
+            <li><a href="index.html">Venda</a></li>
+            <li><a href="#">Aluguel</a></li>
+            <li><a href="corretores.html">Corretores</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5521976276013">Contato</a></li>
         </ul>
     </div>
-</header>
+
+
+
+
+
+  </header>
+
 <body>
-    <div id="cont">
-<div id="foto">
-    <img src="Captura de tela 2023-12-19 132547.png">
+    
+
+    <div class="slideshow">
+
+        <div class="mySlides fade">
+         
+          <img src="rio 1.jpg" style=>
+ 
+        </div>
+        
+        <div class="mySlides fade">
+        
+          <img src="Anderson/1.jpeg" >
+       
+        </div>
+        
+        <div class="mySlides fade">
+         
+          <img src="marcos vila isabel/1.webp" >
+       
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+<br>
+<h2>Imóveis em Destaque</h2>
+    
+    <div class="conte">
+
+        <div class="imoveis">
+      
+     
+        <img src="Anderson/1.jpeg" >   
+        <h2>Apartamento para venda em Copacabana</h2>     
+        <h3>R$ 1.315.000</h3>
+       
+      
+        
+        <a href="01.html"><button>Mais informações</button></a>
+        <h6>Codigo do imóvel: #01</h6>
+    </div>
+
+
+
+    <div class="imoveis">
+      
+        <img src="marcos vila isabel/1.webp" >    
+        <h2>Apartamento para venda em Vila Isabel</h2>    
+        <h3>R$ 520.000</h3>
+        
+        <a href="02.html"><button>Mais informações</button></a>
+        <h6>Codigo do imóvel: #02</h6>
+    </div>
+
+
+    <div class="imoveis">
+         
+       <img src="Fred/1.jpeg" alt="">
+       <h2>Apartamento para venda em Botafogo</h2> 
+
+        <h3>R$ 1.500.000</h3>
+        <a href="03.html"><button>Mais informações</button></a>
+        <h6>Codigo do imóvel: #03</h6>
+    </div>
+
+
+
+  
+
+
+    <div class="imoveis">
+      
+       <img src="paulo copa/1.webp" alt="">
+   <h2>Apartamento para venda em Copacabana</h2>  
+        <h3>R$ 1.799.000</h3>
+     
+        <a href="04.html"><button>Mais informações</button></a>
+        <h6>Codigo do imóvel: #04</h6>
+    </div>
+    
+
+
+    
 </div>
 
-<div id="conteudo">
-    <h2>" Oi Sou Vinicius, </h2>
-    <p>Sou criador de conteudo digital, faço lives de jogos,programador,<br>design,editor "</p>
-</div>  
-</div>
+
+
+
 </body>
-<div id="live">
-
-    <iframe src="https://player.twitch.tv/?channel=vini5693&parent=vinicius5693.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="620"></iframe>
-    <iframe
-    id="chat_embed"
-    src="https://www.twitch.tv/embed/vini5693/chat?parent=vinicius5693.github.io"
-    height="500"
-    width="350">
-  </iframe>
-</div>
-</div>
-
-
-<div id="social">
-    <h2>Me segue nas redes sociais</h2>
-<div id="sociaa">
-
-    <ul>
-        <a href="https://www.instagram.com/vinicius5693_/"><li>Instagram</li></a>
-        <a href="https://twitter.com/v1ni5six"><li>Twitter</li></a>
-        <a href="https://www.twitch.tv/vini5693"> <li>Twitch</li></a>
-        <a href="https://www.youtube.com/channel/UCyzE1bJN-RpSPUPe-k_vw4g"><li>Youtube</li></a>
-        <a href="https://www.tiktok.com/@vinicius5693"> <li>Tiktok</li></a>
-</ul>
-</div>
-
-</div>
-
 
 <footer>
-    <div id="menu2">
-        <ul>
-            <li><a href="#logo">Inicio</a></li>
-            <li><a href="#live">Live</a></li>
-            <li><a href="#social">Rede social</a></li>
-       
-        </ul>
-    </div>
-
-    <p>Vinicius Caamaño @ todos os direitos reservados</p>
+  <p>imoveis Caamaño @ todos os direitos reservados.</p>
 </footer>
 </html>
