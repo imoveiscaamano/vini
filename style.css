@@ -1,8 +1,9 @@
-*{border: 0px;}
+*{border: 0px;font-weight: normal;}
 h1{font-family: 'Josefin Sans', sans-serif;
 font-family: 'Sevillana', cursive;
 font-size: 60px;
 }
+body{margin: 0px;}
 
 header{
     display: flex;
@@ -79,7 +80,7 @@ height: 585px;
 
     
 }
-
+h1{font-weight: bold;}
 h2{
   font-weight: normal;
     font-size: 20px;
