@@ -337,34 +337,53 @@ footer{
 @media  (max-width: 430px) {
  
  h1{
-  font-size: 40px; 
+  font-size: 50px; 
   justify-content: center;
   align-items: center;
   display: flex;
+
 }
   #logo{
     display: flex;
   align-items: center;
 justify-content: center;
+width: 100%;
+
 
 }
 
 
 #menu{
-  display: inline;
- 
+
+
+  margin: 0px;
+
 }
 
 #menu ul{
-  display: inline;
+
+
+ padding: 20px;
+
 }
 
 #menu ul li{
-  display: inline;
+
+
+ 
+padding: 10px;
+
+
+  
 }
 
+#slider{
+  width: 100%;
+  height: 300px;
+}
 header{
   display: inline;
+  width: 100%;
 }
 
 .mySlides fade {
@@ -391,20 +410,20 @@ header{
 
 }
 
-h2{font-size: 16px;}
+h2{font-size: 16px; }
 .imoveis{
-  width: 390px;
+  width: 405px;
  margin-top: 20px;
   padding: 0px;
-  height: 530px;
+  height: 570px;
 }
 
 .imoveis img{
-  width: 390px;
+  width: 405px;
   margin: 0px;
 }
 .imoveis button{
-  width: 370px;
+  width: 380px;
   margin: 0px;
 margin-left: 13px; 
 }
@@ -414,7 +433,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px;
+
 }
 
 #conts{
@@ -481,12 +500,12 @@ width: 230px;
 }
 
 .imoveis{
-  width: 350px;
+  width: 370px;
   height: 560px;
 }
 
 .imoveis img{
-  width: 350px;
+  width: 370px;
 
 }
 .imoveis button{
@@ -510,7 +529,7 @@ width: 360px;
 
 h1{
   display: flex;
-  font-size: 30px;
+  font-size: 40px;
   justify-content: center;
   align-items: center;
 }
@@ -531,7 +550,7 @@ padding: 0px;
 
 h2{font-size: 16px;}
 .imoveis{
-  width: 320px;
+  width: 340px;
   margin-top: 20px;
 
   padding: 0px;
@@ -540,11 +559,11 @@ h2{font-size: 16px;}
 .imoveis img{
   margin: 0px;
 padding: 0px;
-  width:  320px;
+width: 340px;
   margin: 0px;
 }
 .imoveis button{
-  width: 310px;
+  width: 330px;
   margin-left: 5px;
  
 }
